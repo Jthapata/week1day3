@@ -4,3 +4,33 @@
     box-sizing: border-box;
 }
 
+body {
+    min-height: 100vh;
+}
+
+.cards {
+    display: grid;
+    gap: .5rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-evenly;
+    padding: 2rem;
+}
+
+.card-content {
+    border: 2px solid red;
+}
+.card-content h2{
+    text-align: center;
+    padding: 1rem;
+}
+
+.card-content p{
+    text-align: left;
+    padding: 1rem 1.125rem;
+}
+
+@media (max-width: 900px){
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
