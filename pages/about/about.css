@@ -50,6 +50,11 @@ header ul li a:active {
 
 header img {
     padding: 1rem;
+    transition: transform 2s ease;
+}
+
+header img:hover{
+    transform: rotate(360deg);
 }
 
 .cards {
