@@ -6,7 +6,7 @@
 
 body {
     min-height: 100vh;
-    background-color: hsla(0, 0%, 74%, 0.407);
+    background-color: hsla(0, 0%, 74%, 0.40);
 }
 
 header {
@@ -48,6 +48,9 @@ header ul li a:active {
     color: #a8a8a8;
 }
 
+header img {
+    padding: 1rem;
+}
 
 .cards {
     display: grid;
@@ -59,7 +62,7 @@ header ul li a:active {
 }
 
 .card-content {
-    border: 2px solid red;
+    border: 1px solid hsla(40, 20%, 5%, 0.20);
 }
 .card-content h2{
     text-align: center;
