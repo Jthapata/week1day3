@@ -6,13 +6,55 @@
 
 body {
     min-height: 100vh;
+    background-color: hsla(0, 0%, 74%, 0.407);
 }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    background-color: lightgrey;
+}
+
+header h1 {
+    padding: 1.5rem;
+    font-size: 24px;
+}
+
+header ul {
+    list-style-type: none;
+    display: flex;
+}
+
+header ul * {
+    padding: .50rem;
+}
+
+header ul *:last-child {
+    padding-right: 0;
+    margin-right: 1rem;
+}
+
+header ul li a {
+    text-decoration: none;
+}
+
+header ul li a:visited {
+    color: black;
+}
+
+header ul li a:active {
+    color: #a8a8a8;
+}
+
 
 .cards {
     display: grid;
     gap: .5rem;
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: space-evenly;
+    align-content: center;
     padding: 2rem;
 }
 
@@ -29,8 +71,12 @@ body {
     padding: 1rem 1.125rem;
 }
 
-@media (max-width: 900px){
+@media (max-width: 700px){
     .cards {
         grid-template-columns: 1fr;
     }
+}
+
+footer {
+    text-align: center;
 }
