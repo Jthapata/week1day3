@@ -85,6 +85,17 @@ header img:hover{
     }
 }
 
+#mainContent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+}
+#mainContent p {
+    padding: 1rem;
+}
+
 footer {
     text-align: center;
 }
